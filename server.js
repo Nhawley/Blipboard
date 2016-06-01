@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static('public'));
 
 //Database configuration
-mongoose.connect('mongodb://localhost/blipboard');
+mongoose.connect('mongodb://heroku_gl22lrn3:8q7tauds0s7pk1bg8gk2oaage6@ds021343.mlab.com:21343/heroku_gl22lrn3');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
