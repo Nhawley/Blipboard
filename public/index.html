@@ -12,35 +12,52 @@
 <body>
 
 <div class="container">
+	
+	<div class="row">
+		<h1 id="title">Blipboard</h1>
+	</div>
 
 	<div class="row">
-		<a class="waves-effect waves-light btn" id="start"><i class="material-icons right">cloud</i>button</a>
+		<a class="btn-floating btn-large waves-effect waves-light red center-align z-depth-5" id="start"><i id="startTxt">START</i></a>
 	</div>
 
 	<div class="row">
 		<div class="col s10 m8 offset-m2">
-		<section class="container2">
-			<div id="carousel" class="panels-backface-invisible">9
+			<div class="valign-wrapper">
+			<section class="container2 valign">
+				<div id="carousel" class="panels-backface-invisible">9
 
+				</div>
+			</section>
+
+			<section id="options">
+			      
+			    <input id="panel-count" value="24" min="3" max="24" />
+
+			</section>
 			</div>
-		</section>
-
-		<section id="options">
-		      
-		    <input id="panel-count" value="24" min="3" max="24" />
-
-		</section>
 		</div>
 	</div>
 
     <div class="row" id="navigation">
       <div class="col s1 m2">
-        <a class="waves-effect waves-light btn-large" id="previous" data-increment="-1"><i class="material-icons left">remove_circle_outline</i>Downshift</a>
+        <a class="waves-effect waves-light btn-large z-depth-2" id="previous" data-increment="-1"><i class="material-icons left">remove_circle_outline</i>Downshift</a>
       </div>
-      <div class="col s1 m2 offset-m8">
-        <a class="waves-effect waves-light btn-large" id="next" data-increment="1"><i class="material-icons right">add_circle_outline</i>Upshift</a>
+      <div class="col s1 m2 offset-m8 offset-s10">
+        <a class="waves-effect waves-light btn-large z-depth-2" id="next" data-increment="1"><i class="material-icons right">add_circle_outline</i>Upshift</a>
       </div>
     </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content blipz">
+      <h4>Add a Blip</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer blipzLow">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="savenote">Agree</a>
+    </div>
+  </div>
 
 </div>
 
