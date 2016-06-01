@@ -36,6 +36,8 @@ app.get('/', function(req, res) {
 require('./app/routes/Lanes.js')(app);
 
 
-app.listen(5000, function() {
-  console.log('App running on port 5000!');
+var PORT = process.env.PORT || 4000;
+
+app.listen(PORT, function() {
+  console.log('App running on port ' + PORT);
 });
